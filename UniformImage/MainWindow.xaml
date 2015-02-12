@@ -1,0 +1,14 @@
+﻿<Window 
+    x:Class="UniformImageNamespace.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UniformImageNamespace"
+    Height="350"
+    Width="525"
+    >
+    <local:UniformImage 
+        Source="button.png"
+        StaticArea="30"
+        Margin="20"
+        />
+</Window>
