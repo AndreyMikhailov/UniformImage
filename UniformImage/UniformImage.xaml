@@ -3,69 +3,65 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     >
-    <UserControl.Template>
-        <ControlTemplate>
-            <Grid SnapsToDevicePixels="True">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Image
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Stretch="None"
-                    Source="{Binding TopLeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                    />
-                <Border Grid.Row="0" Grid.Column="1">
-                    <Border.Background>
-                        <ImageBrush ImageSource="{Binding TopImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
-                    </Border.Background>
-                </Border>
-                <Image
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    Stretch="None"
-                    Source="{Binding TopRightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                    />
-                <Border Grid.Row="1" Grid.Column="0">
-                    <Border.Background>
-                        <ImageBrush ImageSource="{Binding LeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
-                    </Border.Background>
-                </Border>
-                <Border Grid.Row="1" Grid.Column="1">
-                    <Border.Background>
-                        <ImageBrush ImageSource="{Binding CenterImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
-                    </Border.Background>
-                </Border>
-                <Border Grid.Row="1" Grid.Column="2">
-                    <Border.Background>
-                        <ImageBrush ImageSource="{Binding RightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
-                    </Border.Background>
-                </Border>             
-                <Image 
-                    Grid.Row="2"
-                    Grid.Column="0"
-                    Stretch="None"
-                    Source="{Binding BottomLeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                    />
-                <Border Grid.Row="2" Grid.Column="1">
-                    <Border.Background>
-                        <ImageBrush ImageSource="{Binding BottomImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
-                    </Border.Background>
-                </Border>
-                <Image 
-                    Grid.Row="2"
-                    Grid.Column="2"
-                    Stretch="None"
-                    Source="{Binding BottomRightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                    />
-            </Grid>
-        </ControlTemplate>
-    </UserControl.Template>  
+    <Grid SnapsToDevicePixels="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Image
+            Grid.Row="0"
+            Grid.Column="0"
+            Stretch="None"
+            Source="{Binding TopLeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+            />
+        <Border Grid.Row="0" Grid.Column="1">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding TopImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            </Border.Background>
+        </Border>
+        <Image
+            Grid.Row="0"
+            Grid.Column="2"
+            Stretch="None"
+            Source="{Binding TopRightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+            />
+        <Border Grid.Row="1" Grid.Column="0">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding LeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            </Border.Background>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding CenterImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            </Border.Background>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding RightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            </Border.Background>
+        </Border>             
+        <Image 
+            Grid.Row="2"
+            Grid.Column="0"
+            Stretch="None"
+            Source="{Binding BottomLeftImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+            />
+        <Border Grid.Row="2" Grid.Column="1">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding BottomImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            </Border.Background>
+        </Border>
+        <Image 
+            Grid.Row="2"
+            Grid.Column="2"
+            Stretch="None"
+            Source="{Binding BottomRightImage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+            />
+    </Grid>
 </UserControl>
